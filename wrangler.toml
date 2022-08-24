@@ -1,0 +1,4 @@
+name = "statsfm-pronoun-bot"
+main = "src/index.ts"
+compatibility_date = "2022-08-08"
+node_compat = true

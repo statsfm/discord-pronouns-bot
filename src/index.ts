@@ -62,7 +62,8 @@ export default {
     _ctx: ExecutionContext
   ): Promise<Response> {
     if (request.url.endsWith('/interaction') && request.method === 'POST') {
-      if (!verify(request, env)) return new Response('', { status: 401 });
+      if (!(await verify(request, env)))
+        return new Response('', { status: 401 });
       const message = (await request.json()) as
         | APIPingInteraction
         | APIMessageComponentButtonInteraction;

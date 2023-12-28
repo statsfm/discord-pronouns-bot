@@ -84,7 +84,7 @@ export default {
               data: {
                 flags: MessageFlags.Ephemeral,
                 content:
-                  "It looks like you haven't linked your Stats.fm account to Discord yet. Please do so by clicking the link below.",
+                  "It looks like you haven't linked your stats.fm account to Discord yet. Please do so by clicking the link below.",
                 components: [
                   {
                     type: ComponentType.ActionRow,
@@ -93,7 +93,7 @@ export default {
                         type: ComponentType.Button,
                         style: ButtonStyle.Link,
                         url: 'https://stats.fm/account/connections',
-                        label: 'Link Stats.fm Account to Discord',
+                        label: 'Link stats.fm Account to Discord',
                       },
                     ],
                   },
